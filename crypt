@@ -1,0 +1,13 @@
+#c='oiit gepq erh gevvc sr'
+c='Il uva hmyhpk vm nyvdpun zsvdsf il hmyhpk vusf vm zahukpun zapss'
+c=c.lower()
+
+for s in range(26):
+    r=''
+    for t in c:
+        if t != ' ':
+            temp=ord(t)+s if ord(t)+s<=ord('z') else ord(t)+s-ord('z')-1+ord('a')
+            r+=(chr(temp))
+        else:
+            r+=' '
+    print r
